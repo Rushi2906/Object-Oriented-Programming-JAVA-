@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Area{
-	static float circlearea(int r)
+	float circlearea(int r)
 	{
 		float ans=(float)3.14*r*r;
 		return ans;
@@ -9,7 +9,8 @@ public class Area{
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter radius: ");
 		int r = input.nextInt();
-		float area=circlearea(r);
+		Area obj1 = new Area();
+		float area = obj1.circlearea(r);
 		System.out.println("Area of circle= "+area);
 	}
 }
